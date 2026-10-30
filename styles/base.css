@@ -1,0 +1,218 @@
+/* Color scheme */
+:root {
+    --primary-color: #171717;
+    --secondary-color: #e8a6bc;
+    --accent-color: #fceef3;
+    --background-color: #ffffff;
+    --text-color: #333333;
+}
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+#course-title {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Course banner */
+.course-banner {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.course-banner #course-title {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    padding: 15px;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Content cards */
+.card {
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    min-height: 350px;
+}
+
+
+.card h2 {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 12px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.card p {
+    padding: 0 15px;
+    line-height: 1.6;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+
+
+/* About Me layout */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    gap: 20px;
+    align-items: start;
+    padding: 15px;
+}
+
+.about-text p {
+    line-height: 1.6;
+    margin-top: 0;
+    padding: 0;
+}
+
+.about-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.web-resources ul {
+    line-height: 2;
+    padding-left: 35px;
+}
+
+.web-resources a {
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Country section */
+.country-section {
+    padding: 0 15px 15px;
+}
+
+.country-section h3 {
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+}
+
+.country-content {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 15px;
+    align-items: start;
+}
+
+.country-content figure {
+    margin: 0;
+    text-align: center;
+}
+
+.country-content img {
+    width: 100%;
+    height: auto;
+}
+
+.country-content figcaption {
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+.country-content p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-banner #course-title {
+        font-size: 1.3rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content img {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+
+    .country-content {
+        grid-template-columns: 1fr;
+    }
+
+    .country-content figure {
+        max-width: 150px;
+        margin: 0 auto;
+    }
+}
