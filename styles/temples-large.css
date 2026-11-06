@@ -1,0 +1,35 @@
+/* Larger Screen Styles */
+
+@media screen and (min-width: 600px) {
+
+    /* Hide hamburger button */
+    #menu-button {
+        display: none;
+    }
+
+    /* Show navigation horizontally */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    nav a {
+        padding: 1rem;
+    }
+
+    /* Wider main content */
+    main {
+        max-width: 1100px;
+    }
+
+    /* Multiple temple columns */
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
