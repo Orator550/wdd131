@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Eswatini a beautiful country in Southern Africa.">
+    <meta name="author" content="Lethukuthula Orator Dlamini">
+    <title>Eswatini | country page</title>
+    <link rel="stylesheet" href="css/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Eswatini</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width:700px)" srcset="images/eswatini-large.webp">
+                <img src="images/eswatini-small.webp" alt="Purple-crested Turaco,Eswatini National Bird">
+            </picture>
+        </section>
+
+        <section class="info">
+            <div class="data">
+                <h2>Data</h2>
+                <p><strong>Area:</strong> 17,364 sq km</p>
+                <p><strong>Capital:</strong> Mbabane</p>
+                <p><strong>Royal and Legislative Capital:</strong> Lobamba</p>
+                <p><strong>Languages:</strong> siSwati and English</p>
+                <p><strong>Currency:</strong> Lilangeni (SZL)</p>
+                <p><strong>Time Zone:</strong> UTC+2</p>
+                <p><strong>Calling Code:</strong> +268</p>
+            </div>
+
+            <div class="weather">
+                <h2>Weather</h2>
+
+                <div class="weather-icon">
+                    <img src="images/weather.svg" alt="Partly cloudy weather">
+                </div>
+
+                <p><strong>Temperature:</strong> 18°C</p>
+                <p><strong>Wind Speed:</strong> 10 km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="wind-chill"></span></p>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> 🌸 Lethukuthula Orator Dlamini 🌸 Eswatini 🌸</p>
+        <p>last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
