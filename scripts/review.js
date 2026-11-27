@@ -4,10 +4,7 @@ reviewCount++;
 
 localStorage.setItem("reviewCount", reviewCount);
 
-const counter = document.querySelector("#reviewCounter");
+document.querySelector("#reviewCounter").textContent = reviewCount;
 
-counter.textContent = reviewCount;
-
-const reviewText = reviewCount === 1 ? "review" : "reviews";
-
-counter.parentElement.innerHTML = `You have completed <strong>${reviewCount} ${reviewText}.</strong>`;
+document.querySelector("#reviewWord").textContent =
+    reviewCount === 1 ? "review" : "reviews";
